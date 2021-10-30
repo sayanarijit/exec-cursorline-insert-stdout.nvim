@@ -33,3 +33,12 @@ require"exec-cursorline-insert-stdout".execute{
     prepare_for_next_command = true
 }
 ```
+
+
+# Recommended config
+
+```vim
+command ExecuteLine :lua require"exec-cursorline-insert-stdout".execute{prepare_for_next_command = true}
+
+nnoremap <silent> X :ExecuteLine<CR>
+```
