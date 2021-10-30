@@ -2,6 +2,8 @@
 
 Execute the line under cursor and insert the stdout below.
 
+[![exec-cursorline-insert-stdout.gif](https://s5.gifyu.com/images/exec-cursorline-insert-stdout.gif)](https://gifyu.com/image/eUGt)
+
 # Plug
 
 ```vim
