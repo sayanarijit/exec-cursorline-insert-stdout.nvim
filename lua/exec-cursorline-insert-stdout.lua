@@ -9,6 +9,7 @@ local function execute(args)
 
   local p = io.popen(curline)
   local stdout = p:read("*a")
+  p:close()
 
   if args.process_stdout then
     stdout = args.process_stdout(stdout)
