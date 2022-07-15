@@ -7,7 +7,7 @@ local function execute(args)
   assert(row >= 1)
   local curline = api.nvim_buf_get_lines(0, row - 1, row, true)[1]
 
-  local p = io.popen(curline)
+  local p = assert(io.popen(curline))
   local stdout = p:read("*a")
   p:close()
 
